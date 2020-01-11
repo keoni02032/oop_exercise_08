@@ -62,6 +62,9 @@ int main(int argc, char** argv) {
             hd.wait(main_lock);
             std::cout << "Для продолжения введите 1" << "\n" << "Для выхода введите 0" << "\n";
         } else {
+            done = true;
+            rd.notify_all();
+            sub.join();
             return 0;
         }
     }

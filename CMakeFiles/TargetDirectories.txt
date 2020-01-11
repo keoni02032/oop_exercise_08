@@ -1,0 +1,3 @@
+/home/sergey/labs/OOP/lab8/lab8v1/CMakeFiles/rebuild_cache.dir
+/home/sergey/labs/OOP/lab8/lab8v1/CMakeFiles/lab8.dir
+/home/sergey/labs/OOP/lab8/lab8v1/CMakeFiles/edit_cache.dir
