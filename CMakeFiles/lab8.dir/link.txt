@@ -1,1 +1,0 @@
-/usr/bin/c++   -Wall -g3 -Wextra -pthread   CMakeFiles/lab8.dir/main.cpp.o CMakeFiles/lab8.dir/point.cpp.o CMakeFiles/lab8.dir/pentagon.cpp.o CMakeFiles/lab8.dir/hexagon.cpp.o CMakeFiles/lab8.dir/rhombus.cpp.o  -o lab8 
