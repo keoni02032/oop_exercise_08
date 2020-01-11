@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
 
     unsigned int BufSize = std::atoi(argv[1]);
     std::vector<std::shared_ptr<figure>> f;
-    int command;
+    int command = 1;
     factory factory;
     bool done = false;
     std::condition_variable rd;
@@ -46,6 +46,8 @@ int main(int argc, char** argv) {
         }
     });
 
+    std::cout << "Для начала программы введите 1" << "\n" << "Для выхода введите 0" << "\n";
+
     while(command != 0) {
         std::cin >> command;
         if (command != 0) {
@@ -58,6 +60,7 @@ int main(int argc, char** argv) {
             }
             rd.notify_all();
             hd.wait(main_lock);
+            std::cout << "Для продолжения введите 1" << "\n" << "Для выхода введите 0" << "\n";
         } else {
             return 0;
         }
@@ -66,8 +69,5 @@ int main(int argc, char** argv) {
     done = true;
     rd.notify_all();
     sub.join();
-    return 0;
-
-
     return 0;
 }
